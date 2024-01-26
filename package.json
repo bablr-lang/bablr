@@ -1,0 +1,29 @@
+{
+  "name": "bablr",
+  "description": "The primary BABLR APIs",
+  "version": "0.0.0",
+  "author": "Conrad Buck<conartist6@gmail.com>",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@iter-tools/imm-stack": "1.1.0",
+    "@bablr/vm": "github:bablr-lang/bablr-vm#0f447fb23073634b8f8293d0e44166b57401e256"
+  },
+  "devDependencies": {
+    "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#c040bc95f2dddac160628e4757a412016044b3ef",
+    "enhanced-resolve": "^5.12.0",
+    "eslint": "^8.32.0",
+    "eslint-import-resolver-enhanced-resolve": "^1.0.5",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "^2.6.2"
+  },
+  "repository": "github:bablr-lang/bablr",
+  "homepage": "https://github.com/bablr-lang/bablr",
+  "license": "MIT"
+}
