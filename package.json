@@ -13,7 +13,7 @@
   "sideEffects": false,
   "dependencies": {
     "@iter-tools/imm-stack": "1.1.0",
-    "@bablr/vm": "github:bablr-lang/bablr-vm#0f447fb23073634b8f8293d0e44166b57401e256"
+    "@bablr/agast-vm": "github:bablr-lang/agast-vm#8080c7337426896063025ed7f9eb0243d4228e0a"
   },
   "devDependencies": {
     "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#c040bc95f2dddac160628e4757a412016044b3ef",
