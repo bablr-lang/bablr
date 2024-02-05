@@ -5,12 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@bablr/agast-helpers':
+    specifier: github:bablr-lang/agast-helpers#c347936850ef4f5d1462b4d24cec9fa170ce8e64
+    version: github.com/bablr-lang/agast-helpers/c347936850ef4f5d1462b4d24cec9fa170ce8e64
   '@bablr/agast-vm':
     specifier: github:bablr-lang/agast-vm#8080c7337426896063025ed7f9eb0243d4228e0a
     version: github.com/bablr-lang/agast-vm/8080c7337426896063025ed7f9eb0243d4228e0a
-  '@iter-tools/imm-stack':
-    specifier: 1.1.0
-    version: 1.1.0
 
 devDependencies:
   '@bablr/eslint-config-base':
@@ -1858,6 +1858,14 @@ packages:
     resolution: {tarball: https://codeload.github.com/bablr-lang/agast-helpers/tar.gz/1a0f8e28de909821823183f53b6cfe14654f0964}
     name: '@bablr/agast-helpers'
     version: 0.0.0
+    dev: false
+
+  github.com/bablr-lang/agast-helpers/c347936850ef4f5d1462b4d24cec9fa170ce8e64:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-helpers/tar.gz/c347936850ef4f5d1462b4d24cec9fa170ce8e64}
+    name: '@bablr/agast-helpers'
+    version: 0.0.0
+    dependencies:
+      '@iter-tools/imm-stack': 1.1.0
     dev: false
 
   github.com/bablr-lang/agast-vm-helpers/0d205d520d575b9e71660f6add8662a917c56fed:

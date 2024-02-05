@@ -12,7 +12,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@iter-tools/imm-stack": "1.1.0",
+    "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#c347936850ef4f5d1462b4d24cec9fa170ce8e64",
     "@bablr/agast-vm": "github:bablr-lang/agast-vm#8080c7337426896063025ed7f9eb0243d4228e0a"
   },
   "devDependencies": {
