@@ -6,11 +6,14 @@ settings:
 
 dependencies:
   '@bablr/agast-helpers':
-    specifier: github:bablr-lang/agast-helpers#c347936850ef4f5d1462b4d24cec9fa170ce8e64
-    version: github.com/bablr-lang/agast-helpers/c347936850ef4f5d1462b4d24cec9fa170ce8e64
+    specifier: github:bablr-lang/agast-helpers#06894387f6d302a35d61a016cc5054fa5a69d768
+    version: github.com/bablr-lang/agast-helpers/06894387f6d302a35d61a016cc5054fa5a69d768
   '@bablr/agast-vm':
-    specifier: github:bablr-lang/agast-vm#8080c7337426896063025ed7f9eb0243d4228e0a
-    version: github.com/bablr-lang/agast-vm/8080c7337426896063025ed7f9eb0243d4228e0a
+    specifier: github:bablr-lang/agast-vm#1f7ba210f281bacec98f3e4d1ad25b8a8583c986
+    version: github.com/bablr-lang/agast-vm/1f7ba210f281bacec98f3e4d1ad25b8a8583c986
+  '@bablr/generator-class-trampoline':
+    specifier: github:bablr-lang/generator-class-trampoline#16d03dce8fc9ac3183ec2b3304822c3d8648b699
+    version: github.com/bablr-lang/generator-class-trampoline/16d03dce8fc9ac3183ec2b3304822c3d8648b699
 
 devDependencies:
   '@bablr/eslint-config-base':
@@ -266,20 +269,6 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
     dev: true
-
-  /@bablr/boot-helpers@0.1.3:
-    resolution: {integrity: sha512-RrIVJqmQHH0ka0ZzdFG84bXskJVRZ3DBM82l5mN3orhbkbEuGUKVWJ+vKtIKOskrRcqhWCtd588BbZdZQG9/TQ==}
-    engines: {node: '>=12.0.0'}
-    dev: false
-
-  /@bablr/regex-vm@0.4.0:
-    resolution: {integrity: sha512-1uuExIXXHahGiMK5qG7OXjZpw2pXDmHTy8v6t6hl4V5zSGvuexGhjnlEBWQnQ/8O/E8QsmeNTeZ1wp+/CEfCAg==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      '@iter-tools/imm-stack': 1.1.0
-      functional-red-black-tree: 1.0.1
-      iter-tools-es: 7.5.3
-    dev: false
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.56.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
@@ -1848,48 +1837,64 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  git@github.com+bablr-lang/ast-helpers/86261c74e09bce97cfa2245f7c0fe4102f70ca7f:
-    resolution: {commit: 86261c74e09bce97cfa2245f7c0fe4102f70ca7f, repo: git@github.com:bablr-lang/ast-helpers.git, type: git}
-    name: '@bablr/ast-helpers'
-    version: 0.0.0
-    dev: false
-
-  github.com/bablr-lang/agast-helpers/1a0f8e28de909821823183f53b6cfe14654f0964:
-    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-helpers/tar.gz/1a0f8e28de909821823183f53b6cfe14654f0964}
-    name: '@bablr/agast-helpers'
-    version: 0.0.0
-    dev: false
-
-  github.com/bablr-lang/agast-helpers/c347936850ef4f5d1462b4d24cec9fa170ce8e64:
-    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-helpers/tar.gz/c347936850ef4f5d1462b4d24cec9fa170ce8e64}
+  github.com/bablr-lang/agast-helpers/06894387f6d302a35d61a016cc5054fa5a69d768:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-helpers/tar.gz/06894387f6d302a35d61a016cc5054fa5a69d768}
     name: '@bablr/agast-helpers'
     version: 0.0.0
     dependencies:
       '@iter-tools/imm-stack': 1.1.0
     dev: false
 
-  github.com/bablr-lang/agast-vm-helpers/0d205d520d575b9e71660f6add8662a917c56fed:
-    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-vm-helpers/tar.gz/0d205d520d575b9e71660f6add8662a917c56fed}
+  github.com/bablr-lang/agast-helpers/8b57f2971fc91f6dd4e23ec626a77c931c877786:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-helpers/tar.gz/8b57f2971fc91f6dd4e23ec626a77c931c877786}
+    name: '@bablr/agast-helpers'
+    version: 0.0.0
+    dependencies:
+      '@iter-tools/imm-stack': 1.1.0
+    dev: false
+
+  github.com/bablr-lang/agast-helpers/f59c044508ac43226f071345f8e0231fa3fc7fa4:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-helpers/tar.gz/f59c044508ac43226f071345f8e0231fa3fc7fa4}
+    name: '@bablr/agast-helpers'
+    version: 0.0.0
+    dependencies:
+      '@iter-tools/imm-stack': 1.1.0
+    dev: false
+
+  github.com/bablr-lang/agast-vm-helpers/5f778842db996fc6e610984dda70ec6a72899e4f:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-vm-helpers/tar.gz/5f778842db996fc6e610984dda70ec6a72899e4f}
     name: '@bablr/agast-vm-helpers'
     version: 0.0.0
     dependencies:
-      '@bablr/ast-helpers': git@github.com+bablr-lang/ast-helpers/86261c74e09bce97cfa2245f7c0fe4102f70ca7f
-      '@bablr/boot-helpers': 0.1.3
+      '@bablr/agast-helpers': github.com/bablr-lang/agast-helpers/06894387f6d302a35d61a016cc5054fa5a69d768
     dev: false
 
-  github.com/bablr-lang/agast-vm/8080c7337426896063025ed7f9eb0243d4228e0a:
-    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-vm/tar.gz/8080c7337426896063025ed7f9eb0243d4228e0a}
+  github.com/bablr-lang/agast-vm-helpers/62420e6dcf3cd4c9cb9301ba13a3854f4e1af8d4:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-vm-helpers/tar.gz/62420e6dcf3cd4c9cb9301ba13a3854f4e1af8d4}
+    name: '@bablr/agast-vm-helpers'
+    version: 0.0.0
+    dependencies:
+      '@bablr/agast-helpers': github.com/bablr-lang/agast-helpers/f59c044508ac43226f071345f8e0231fa3fc7fa4
+    dev: false
+
+  github.com/bablr-lang/agast-vm/1f7ba210f281bacec98f3e4d1ad25b8a8583c986:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/agast-vm/tar.gz/1f7ba210f281bacec98f3e4d1ad25b8a8583c986}
     name: '@bablr/agast-vm'
     version: 0.0.0
     dependencies:
-      '@bablr/agast-helpers': github.com/bablr-lang/agast-helpers/1a0f8e28de909821823183f53b6cfe14654f0964
-      '@bablr/agast-vm-helpers': github.com/bablr-lang/agast-vm-helpers/0d205d520d575b9e71660f6add8662a917c56fed
-      '@bablr/boot-helpers': 0.1.3
+      '@bablr/agast-helpers': github.com/bablr-lang/agast-helpers/06894387f6d302a35d61a016cc5054fa5a69d768
+      '@bablr/agast-vm-helpers': github.com/bablr-lang/agast-vm-helpers/5f778842db996fc6e610984dda70ec6a72899e4f
       '@bablr/coroutine': github.com/bablr-lang/coroutine/2342d82713731288034df588f11f540d1b76603d
-      '@bablr/regex-vm': 0.4.0
-      '@bablr/weak-stack': github.com/bablr-lang/weak-stack/f20fba7c998623ceb5c61dd2f09dac3362af22fc
+      '@bablr/regex-vm': github.com/bablr-lang/regex-vm/eca0b3ebdcee67f68f7f6b9addc147cf97a63902
+      '@bablr/weak-stack': github.com/bablr-lang/weak-stack/9448f4a9a550900698c072fb39d77307763b5cd8
       '@iter-tools/imm-stack': 1.1.0
       iter-tools-es: 7.5.3
+    dev: false
+
+  github.com/bablr-lang/class-grammar-helpers/3bd5c83a2697e3a1b9e421f868a430d3ea1c9be0:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/class-grammar-helpers/tar.gz/3bd5c83a2697e3a1b9e421f868a430d3ea1c9be0}
+    name: '@bablr/class-grammar-helpers'
+    version: 0.0.0
     dev: false
 
   github.com/bablr-lang/coroutine/2342d82713731288034df588f11f540d1b76603d:
@@ -1918,8 +1923,32 @@ packages:
       - supports-color
     dev: true
 
-  github.com/bablr-lang/weak-stack/f20fba7c998623ceb5c61dd2f09dac3362af22fc:
-    resolution: {tarball: https://codeload.github.com/bablr-lang/weak-stack/tar.gz/f20fba7c998623ceb5c61dd2f09dac3362af22fc}
+  github.com/bablr-lang/generator-class-trampoline/16d03dce8fc9ac3183ec2b3304822c3d8648b699:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/generator-class-trampoline/tar.gz/16d03dce8fc9ac3183ec2b3304822c3d8648b699}
+    name: '@bablr/generator-class-trampoline'
+    version: 0.0.0
+    dependencies:
+      '@bablr/agast-helpers': github.com/bablr-lang/agast-helpers/8b57f2971fc91f6dd4e23ec626a77c931c877786
+      '@bablr/agast-vm-helpers': github.com/bablr-lang/agast-vm-helpers/62420e6dcf3cd4c9cb9301ba13a3854f4e1af8d4
+      '@bablr/class-grammar-helpers': github.com/bablr-lang/class-grammar-helpers/3bd5c83a2697e3a1b9e421f868a430d3ea1c9be0
+      '@bablr/coroutine': github.com/bablr-lang/coroutine/2342d82713731288034df588f11f540d1b76603d
+      '@bablr/weak-stack': github.com/bablr-lang/weak-stack/9448f4a9a550900698c072fb39d77307763b5cd8
+    dev: false
+
+  github.com/bablr-lang/regex-vm/eca0b3ebdcee67f68f7f6b9addc147cf97a63902:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/regex-vm/tar.gz/eca0b3ebdcee67f68f7f6b9addc147cf97a63902}
+    name: '@bablr/regex-vm'
+    version: 0.0.0
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@bablr/agast-helpers': github.com/bablr-lang/agast-helpers/8b57f2971fc91f6dd4e23ec626a77c931c877786
+      '@iter-tools/imm-stack': 1.1.0
+      functional-red-black-tree: 1.0.1
+      iter-tools-es: 7.5.3
+    dev: false
+
+  github.com/bablr-lang/weak-stack/9448f4a9a550900698c072fb39d77307763b5cd8:
+    resolution: {tarball: https://codeload.github.com/bablr-lang/weak-stack/tar.gz/9448f4a9a550900698c072fb39d77307763b5cd8}
     name: '@bablr/weak-stack'
     version: 0.0.0
     dev: false
