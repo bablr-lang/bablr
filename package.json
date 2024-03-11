@@ -12,9 +12,11 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#06894387f6d302a35d61a016cc5054fa5a69d768",
-    "@bablr/agast-vm": "github:bablr-lang/agast-vm#1f7ba210f281bacec98f3e4d1ad25b8a8583c986",
-    "@bablr/generator-class-trampoline": "github:bablr-lang/generator-class-trampoline#16d03dce8fc9ac3183ec2b3304822c3d8648b699"
+    "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#f2786e7b8051714e5c427ba2c8af92fa8c75e209",
+    "@bablr/agast-vm-helpers": "github:bablr-lang/agast-vm-helpers#9e7a73db7772cd97952e0b92b6448da8f180ebaf",
+    "@bablr/agast-vm": "github:bablr-lang/agast-vm#9c46994160f0315f38c904e720824b7eda870c37",
+    "@bablr/bablr-vm": "github:bablr-lang/bablr-vm#941b263edc430d0e155cfda03abb015f902583ee",
+    "@bablr/bablr-vm-strategy-parse": "github:bablr-lang/bablr-vm-strategy-parse#66b8bb41004d703e612c948f5b31593ffe240449"
   },
   "devDependencies": {
     "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#c040bc95f2dddac160628e4757a412016044b3ef",
