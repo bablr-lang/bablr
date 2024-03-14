@@ -14,9 +14,9 @@
   "dependencies": {
     "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#90448dbbce32f902affe36efc2cc3bb17fd9e032",
     "@bablr/agast-vm-helpers": "github:bablr-lang/agast-vm-helpers#b770edcd3ef0d9e3a08f5201b27e3045df12a82b",
-    "@bablr/agast-vm": "github:bablr-lang/agast-vm#9c46994160f0315f38c904e720824b7eda870c37",
+    "@bablr/agast-vm": "github:bablr-lang/agast-vm#c82f5e2c5f83730fb4c2daeb5b4f0a04f9e49779",
     "@bablr/bablr-vm": "github:bablr-lang/bablr-vm#80f43a29cc3ae7834e3bb9f77d5abd7a69ad5f13",
-    "@bablr/bablr-vm-strategy-parse": "github:bablr-lang/bablr-vm-strategy-parse#067ca45b3f64e55c0cb2ef437f4195b1a1a47e16"
+    "@bablr/bablr-vm-strategy-parse": "github:bablr-lang/bablr-vm-strategy-parse#a2195b2ceeed054d0652cbff6b40e001e64cbfe9"
   },
   "devDependencies": {
     "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#c040bc95f2dddac160628e4757a412016044b3ef",
