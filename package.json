@@ -8,13 +8,14 @@
     "lib"
   ],
   "exports": {
-    ".": "./lib/index.js"
+    ".": "./lib/index.js",
+    "./enhanceable": "./lib/enhanceable.js"
   },
   "sideEffects": false,
   "dependencies": {
-    "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#5ed0288b0c9ffa794a11e8afed7583f1e3100bf3",
-    "@bablr/agast-vm-helpers": "github:bablr-lang/agast-vm-helpers#1d5b9c9bd54b4fd9816f5876488f4459a4c33641",
-    "@bablr/helpers": "github:bablr-lang/bablr-helpers#3b7124900d97329e38a444f099a2f751cf3a5724",
+    "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#32254f2a282c77af76760efcb4d44015d349398f",
+    "@bablr/agast-vm-helpers": "github:bablr-lang/agast-vm-helpers#83ef3d6a2a3c3e94526faa47f1a9e67339fbfc4b",
+    "@bablr/helpers": "github:bablr-lang/bablr-helpers#3092387d0a5833c896ab3e168d546a6d3c896985",
     "@bablr/agast-vm": "github:bablr-lang/agast-vm#47c4f9330e89f9672914beeb026a74a1e7c4a8ca",
     "@bablr/bablr-vm": "github:bablr-lang/bablr-vm#60ebd623915063f32194cee6d588dbc0fa00d947",
     "@bablr/bablr-vm-strategy-parse": "github:bablr-lang/bablr-vm-strategy-parse#c8f51bbc71ecf5b9b7cd56493a61cdbce03223ab"
