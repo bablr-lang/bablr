@@ -13,12 +13,12 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#32254f2a282c77af76760efcb4d44015d349398f",
-    "@bablr/agast-vm-helpers": "github:bablr-lang/agast-vm-helpers#83ef3d6a2a3c3e94526faa47f1a9e67339fbfc4b",
-    "@bablr/helpers": "github:bablr-lang/bablr-helpers#3092387d0a5833c896ab3e168d546a6d3c896985",
-    "@bablr/agast-vm": "github:bablr-lang/agast-vm#47c4f9330e89f9672914beeb026a74a1e7c4a8ca",
-    "@bablr/bablr-vm": "github:bablr-lang/bablr-vm#60ebd623915063f32194cee6d588dbc0fa00d947",
-    "@bablr/bablr-vm-strategy-parse": "github:bablr-lang/bablr-vm-strategy-parse#c8f51bbc71ecf5b9b7cd56493a61cdbce03223ab"
+    "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#caaa3389b422a03bc0f79e377fb499278bcd9109",
+    "@bablr/agast-vm-helpers": "github:bablr-lang/agast-vm-helpers#06490d8a33a192a39df2cd35ea97292d23f63675",
+    "@bablr/helpers": "github:bablr-lang/bablr-helpers#7315ea97e7a5fd3890ba76ea50ac689d01cbc446",
+    "@bablr/agast-vm": "github:bablr-lang/agast-vm#26569fe6bb75cab64f0831766eadac9c1c19f91d",
+    "@bablr/bablr-vm": "github:bablr-lang/bablr-vm#2ffaaddcfa78484afc84a1a99d291727d637b8e8",
+    "@bablr/bablr-vm-strategy-parse": "github:bablr-lang/bablr-vm-strategy-parse#c8c7ae70f54bef0c8d95407027c0dc25da656a6b"
   },
   "devDependencies": {
     "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#49f5952efed27f94ee9b94340eb1563c440bf64e",
