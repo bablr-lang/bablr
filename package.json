@@ -15,10 +15,10 @@
   "dependencies": {
     "@bablr/agast-helpers": "github:bablr-lang/agast-helpers#5a704bd826ed2e8ab6ef0419571433996cea2894",
     "@bablr/agast-vm-helpers": "github:bablr-lang/agast-vm-helpers#f5e73888656c091c5a9fd1963146ac3bf3426628",
-    "@bablr/helpers": "github:bablr-lang/bablr-helpers#8ded1818aef49ccc3c90783aa94516bd6da07050",
-    "@bablr/agast-vm": "github:bablr-lang/agast-vm#16fa8f4a34efac248060a5b41fb4bdd3b5552b00",
-    "@bablr/bablr-vm": "github:bablr-lang/bablr-vm#e73e1b5a58336a5c0e0555777b298aa728df3e55",
-    "@bablr/bablr-vm-strategy-parse": "github:bablr-lang/bablr-vm-strategy-parse#4e532379d75e4c73171250cc7307ca4e83f046b6"
+    "@bablr/helpers": "github:bablr-lang/bablr-helpers#db20891fdd02c7984f109ccf37fafe2223b275ab",
+    "@bablr/agast-vm": "github:bablr-lang/agast-vm#e9067e7d5fb963de22a0dacf74232e5c9e20b99c",
+    "@bablr/bablr-vm": "github:bablr-lang/bablr-vm#f1f503cdb42847b6475af00527c7bf406ebaa3b2",
+    "@bablr/bablr-vm-strategy-parse": "github:bablr-lang/bablr-vm-strategy-parse#31d554468a72cfe77a7a73a1ac5b49f4dbd250b9"
   },
   "devDependencies": {
     "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#49f5952efed27f94ee9b94340eb1563c440bf64e",
