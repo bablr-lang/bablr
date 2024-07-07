@@ -15,7 +15,7 @@
   "dependencies": {
     "@bablr/agast-helpers": "0.1.6",
     "@bablr/agast-vm-helpers": "0.1.5",
-    "@bablr/helpers": "6.0.4",
+    "@bablr/helpers": "0.16.0",
     "@bablr/agast-vm": "0.2.0",
     "@bablr/bablr-vm": "0.14.0",
     "@bablr/bablr-vm-strategy-parse": "0.2.0"
