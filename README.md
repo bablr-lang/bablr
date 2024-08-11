@@ -16,7 +16,7 @@ const language = {
   grammar: class {
     @Node
     *Number() {
-      while (yield i`eat(<*Digit> 'digits[]')`);
+      while (yield i`eatMatch(<*Digit> 'digits[]')`);
     }
 
     @Node
