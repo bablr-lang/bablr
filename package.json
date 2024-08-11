@@ -1,7 +1,7 @@
 {
   "name": "bablr",
   "description": "The primary BABLR APIs",
-  "version": "0.0.0",
+  "version": "0.4.0",
   "author": "Conrad Buck<conartist6@gmail.com>",
   "type": "module",
   "files": [
