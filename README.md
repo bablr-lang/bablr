@@ -7,39 +7,45 @@ This is the priary API package for [BABLR](https://github.com/bablr-lang). Use i
 ## Usage
 
 ```js
-import { i } from '@bablr/boot';
+import { i, spam } from '@bablr/boot';
 import { buildTag } from 'bablr';
-import { Node } from '@bablr/helpers/decorators';
+import { buildCovers } from '@bablr/helpers/decorators';
 
 const language = {
-  canonicalURL: 'https://bablr.org/languages/example/digits',
+  canonicalURL:
+    'https://bablr.org/languages/example/digits',
   grammar: class {
-    @Node
-    *Number() {
-      while (yield i`eatMatch(<*Digit> 'digits[]')`);
+    constructor() {
+      // If you can use decorators, `@Node` on a production will do this for you
+      this.covers = buildCovers({
+        [Symbol.for('@bablr/node')]: ['Number', 'Digit'],
+      });
     }
 
-    @Node
+    *Number() {
+      while (yield i`eatMatch(<*Digit /> 'digits[]')`);
+    }
+
     *Digit() {
       yield i`eat(/\d/)`;
     }
-  };
-}
+  },
+};
 
-const digits = buildTag(language, 'Number');
+const matcher = spam`<'https://bablr.org/languages/example/digits':Number />`;
+const digits = buildTag(language, matcher);
 
 digits`42`;
 
-// <Number>
-//   digits[]:
-//   <*Digit>
-//     '4'
+// <!0:cstml bablr-language="https://bablr.org/languages/example/digits">
+// <$>
+//   .:
+//   <$Number>
+//     digits[]: []
+//     digits[]: <*Digit '4' />
+//     digits[]: <*Digit '2' />
 //   </>
-//   digits[]:
-//   <*Digit>
-//     '2'
-//   </>
-//  </>
+// </>
 ```
 
 ## Prior Art
