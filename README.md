@@ -2,7 +2,7 @@
 
 [![come chat on Discord](https://img.shields.io/discord/1151914613089251388)](https://discord.gg/NfMNyYN6cX)
 
-This is the priary API package for [BABLR](https://github.com/bablr-lang). Use it in combination with a BABLR language definition to perform parsing.
+This is the primary API package for [BABLR](https://github.com/bablr-lang). Use it in combination with a BABLR language definition to perform parsing.
 
 ## Usage
 
