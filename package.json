@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "author": "Conrad Buck<conartist6@gmail.com>",
   "type": "module",
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "exports": {
     ".": "./lib/index.js",
     "./enhanceable": "./lib/enhanceable.js"
@@ -15,7 +13,7 @@
   "dependencies": {
     "@bablr/agast-helpers": "^0.5.0",
     "@bablr/agast-vm-helpers": "^0.5.0",
-    "@bablr/helpers": "^0.20.0",
+    "@bablr/helpers": "^0.20.3",
     "@bablr/agast-vm": "^0.6.0",
     "@bablr/bablr-vm": "^0.18.0",
     "@bablr/bablr-vm-strategy-parse": "^0.6.0",
