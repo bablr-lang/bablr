@@ -22,7 +22,7 @@
     "iter-tools-es": "7.5.3"
   },
   "devDependencies": {
-    "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#49f5952efed27f94ee9b94340eb1563c440bf64e",
+    "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#c97bfa4b3663f8378e9b3e42bb5a41e685406cf9",
     "enhanced-resolve": "^5.12.0",
     "eslint": "^8.32.0",
     "eslint-import-resolver-enhanced-resolve": "^1.0.5",
