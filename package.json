@@ -18,7 +18,7 @@
     "@bablr/helpers": "0.24.0",
     "@bablr/agast-vm": "0.10.0",
     "@bablr/bablr-vm": "0.22.0",
-    "@bablr/bablr-vm-strategy-parse": "0.9.0",
+    "@bablr/bablr-vm-strategy-parse": "0.10.0",
     "iter-tools-es": "7.5.3"
   },
   "devDependencies": {
