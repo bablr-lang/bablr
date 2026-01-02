@@ -9,19 +9,13 @@ This is the primary API package for [BABLR](https://github.com/bablr-lang). Use 
 ```js
 import { i, spam } from '@bablr/boot';
 import { buildTag } from 'bablr';
+import { printPrettyCSTML, printSource } from '@bablr/agast-helpers/tree';
 import { buildCovers } from '@bablr/helpers/decorators';
 
 const language = {
   canonicalURL:
     'https://bablr.org/languages/example/digits',
   grammar: class {
-    constructor() {
-      // If you can use decorators, `@Node` on a production will do this for you
-      this.covers = buildCovers({
-        [Symbol.for('@bablr/node')]: ['Number', 'Digit'],
-      });
-    }
-
     *Number() {
       while (yield i`eatMatch(<*Digit /> 'digits[]')`);
     }
@@ -32,19 +26,19 @@ const language = {
   },
 };
 
-const matcher = spam`<'https://bablr.org/languages/example/digits':Number />`;
+const matcher = spam`<Number />`;
 const digits = buildTag(language, matcher);
 
-digits`42`;
+const tree = digits`42`;
 
-// <!0:cstml bablr-language="https://bablr.org/languages/example/digits">
-// <$>
-//   .:
-//   <$Number>
-//     digits[]: <*Digit '4' />
-//     digits[]: <*Digit '2' />
-//   </>
-// </>
+printPrettyCSTML(tree) === `
+<Number>
+  digits[]: <*Digit '4' />
+  digits[]: <*Digit '2' />
+</>
+`.trim(); // true
+
+printSource(tree) === '42'; // true
 ```
 
 ## Prior Art
