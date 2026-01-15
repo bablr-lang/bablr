@@ -7,8 +7,9 @@ This is the primary API package for [BABLR](https://github.com/bablr-lang). Use 
 ## Usage
 
 ```js
-import { m } from '@bablr/boot';
+import { m, re } from '@bablr/boot';
 import { buildTag } from 'bablr';
+import { eat, eatMatch } from '@bablr/helpers/grammar';
 import { printPrettyCSTML, printSource } from '@bablr/agast-helpers/tree';
 
 const language = {
@@ -18,7 +19,7 @@ const language = {
     }
 
     *Digit() {
-      yield i`eat(/\d/)`;
+      yield eat(re`/\d/`);
     }
   },
 };
