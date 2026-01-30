@@ -16,7 +16,7 @@
     "@bablr/agast-helpers": "0.10.4",
     "@bablr/agast-vm-helpers": "0.10.4",
     "@bablr/helpers": "0.25.2",
-    "@bablr/bablr-vm": "0.23.5",
+    "@bablr/bablr-vm": "0.23.6",
     "@bablr/bablr-vm-strategy-parse": "0.11.4"
   },
   "devDependencies": {
