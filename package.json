@@ -16,8 +16,8 @@
     "@bablr/agast-helpers": "0.10.4",
     "@bablr/agast-vm-helpers": "0.10.4",
     "@bablr/helpers": "0.25.2",
-    "@bablr/bablr-vm": "0.23.6",
-    "@bablr/bablr-vm-strategy-parse": "0.11.4"
+    "@bablr/bablr-vm": "0.23.7",
+    "@bablr/bablr-vm-strategy-parse": "0.11.5"
   },
   "devDependencies": {
     "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#c97bfa4b3663f8378e9b3e42bb5a41e685406cf9",
