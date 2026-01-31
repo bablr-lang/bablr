@@ -13,7 +13,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@bablr/agast-helpers": "0.10.7",
+    "@bablr/agast-helpers": "0.10.8",
     "@bablr/agast-vm-helpers": "0.10.4",
     "@bablr/helpers": "0.25.2",
     "@bablr/bablr-vm": "0.23.8",
