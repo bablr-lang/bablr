@@ -7,10 +7,13 @@ This is the primary API package for [BABLR](https://github.com/bablr-lang). Use 
 ## Usage
 
 ```js
-import { m, re } from '@bablr/boot';
+import { m } from '@bablr/boot';
 import { buildTag } from 'bablr';
 import { eat, eatMatch } from '@bablr/helpers/grammar';
-import { printPrettyCSTML, printSource } from '@bablr/agast-helpers/tree';
+import {
+  printPrettyCSTML,
+  printSource,
+} from '@bablr/agast-helpers/tree';
 
 const language = {
   grammar: class {
@@ -19,7 +22,7 @@ const language = {
     }
 
     *Digit() {
-      yield eat(re`/\d/`);
+      yield eat(m`/\d/`);
     }
   },
 };
@@ -29,7 +32,8 @@ const digits = buildTag(language, matcher);
 
 const tree = digits`42`;
 
-printPrettyCSTML(tree) === `
+printPrettyCSTML(tree) ===
+  `
 <Number>
   digits[]: <*Digit '4' />
   digits[]: <*Digit '2' />
