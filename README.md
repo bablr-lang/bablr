@@ -7,9 +7,8 @@ This is the primary API package for [BABLR](https://github.com/bablr-lang). Use 
 ## Usage
 
 ```js
-import { m } from '@bablr/boot';
 import { buildTag } from 'bablr';
-import { eat, eatMatch } from '@bablr/helpers/grammar';
+import { m, eat, eatMatch } from '@bablr/helpers/grammar';
 import {
   printPrettyCSTML,
   printSource,
