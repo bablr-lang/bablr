@@ -13,11 +13,11 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@bablr/agast-helpers": "0.11.0",
-    "@bablr/agast-vm-helpers": "0.11.0",
-    "@bablr/helpers": "0.26.0",
-    "@bablr/bablr-vm": "0.24.0",
-    "@bablr/bablr-vm-strategy-parse": "0.12.0"
+    "@bablr/agast-helpers": "0.11.1",
+    "@bablr/agast-vm-helpers": "0.11.1",
+    "@bablr/helpers": "0.26.2",
+    "@bablr/bablr-vm": "0.24.1",
+    "@bablr/bablr-vm-strategy-parse": "0.12.1"
   },
   "devDependencies": {
     "@bablr/eslint-config-base": "github:bablr-lang/eslint-config-base#23b94fb3bdfdbc3ac7ed9cb58d7979d8f07dce2b",
